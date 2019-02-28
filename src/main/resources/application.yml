@@ -1,0 +1,66 @@
+###################################################################################
+### Web服务器配置
+###################################################################################
+server:
+  port: 28081
+  servlet:
+    context-path: /
+
+###################################################################################
+### logging(logback)
+###################################################################################
+logging:
+  config: classpath:logback.xml
+  level:
+    org.springframework: warn
+    org.clever: debug
+
+###################################################################################
+### Spring配置
+###################################################################################
+spring:
+  profiles.active: dev
+  application.name: clever-quartz-server
+  aop.proxy-target-class: true
+
+  servlet: #------------------------------------------------------------ 文件上传配置
+    multipart:
+      enabled: true
+      max-file-size: 1MB
+      max-request-size: 10MB
+
+  http: #------------------------------------------------------------------ http配置
+    converters:
+      preferred-json-mapper: jackson
+    encoding:
+      charset: UTF-8
+      force: true
+
+  jackson: #------------------------------------------------------------ jackson配置
+    date-format: yyyy-MM-dd HH:mm:ss
+    joda-date-time-format: yyyy-MM-dd HH:mm:ss
+    locale: zh_CN
+    time-zone: GMT+8
+
+  resources: #------------------------------------------------ html、js、css 静态资源
+    chain:
+      cache: true
+      gzipped: true
+    cache:
+      period: 31536000s
+    static-locations: ['classpath:/static/']
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
