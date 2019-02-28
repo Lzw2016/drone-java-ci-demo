@@ -27,7 +27,7 @@ steps:
     image: plugins/docker
     settings:
       registry: '192.168.159.136:5000'
-      repo: '192.168.159.136:5000/java-service/clever-quartz-server'
+      repo: '192.168.159.136:5000/java-service/drone-java-ci-demo-server'
       # bip: true
       insecure: true
       dockerfile: ./Dockerfile
