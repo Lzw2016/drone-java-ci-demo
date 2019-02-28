@@ -60,6 +60,17 @@ steps:
         - docker run --name drone-java-ci-demo-server -d -p 28081:28081 -v /opt/logs/java-service:/logs 192.168.159.136:5000/java-service/drone-java-ci-demo-server:0.0.1-SNAPSHOT
         - exit
 
+  - name: 发送通知
+    image: drillster/drone-email
+    detach: true
+    settings:
+      host: smtp.163.com
+      port: 25 # 465/994
+      username: love520lzw1000003@163.com
+      password: li19930611
+      from: love520lzw1000003@163.com
+      recipients: [ the-admin@your-domain.com, octocat@your-domain.com ]
+
 volumes:
   # Java打包目录
   - name: package-java
