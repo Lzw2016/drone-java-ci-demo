@@ -69,7 +69,7 @@ steps:
       username: love520lzw1000003@163.com
       password: li19930611
       skip_verify: true
-      from: 李志伟
+      from: lizw
       recipients: [ 'lzw1000000@163.com', '1183409807@qq.com' ]
       recipients_only: true
       subject: '{{repo.fullName}}'
