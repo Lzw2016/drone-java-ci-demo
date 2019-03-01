@@ -25,6 +25,16 @@
             color: #f5222d;
         }
 
+        .status-success {
+            color: #ffffff;
+            background-color: #52c41a;
+        }
+
+        .status-error {
+            color: #ffffff;
+            background-color: #f5222d;
+        }
+
         /*-------------------------------------------------------------------*/
         .info-table {
             border-collapse: collapse;
@@ -85,7 +95,9 @@
             </tr>
             <tr>
                 <td class="table-label">构建状态</td>
-                <td class="table-value {{build.status}}">{{build.status}}</td>
+                <td class="table-value">
+                    <span class="status-{{build.status}}" style="border-radius:5px;">{{build.status}}</span>
+                </td>
             </tr>
             <tr>
                 <td class="table-label">构建时间</td>
