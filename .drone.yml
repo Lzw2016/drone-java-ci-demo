@@ -73,7 +73,7 @@ steps:
       recipients: [ 'lzw1000000@163.com', '1183409807@qq.com' ]
       recipients_only: true
       subject: '{{repo.fullName}}'
-      body: '{{repo.fullName}}'
+      body: 'file:///drone/src/drone-email.html'
 
 volumes:
   # Java打包目录
