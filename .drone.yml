@@ -32,9 +32,9 @@ steps:
       insecure: true
       dockerfile: ./Dockerfile
       target: dev
-      tags: ['0.0.1-SNAPSHOT']
+      # tags: ['0.0.1-SNAPSHOT']
       force_tag: true
-      auto_tag: false
+      auto_tag: true
       auto_tag_suffix: ''
 
   - name: 启动Docker容器
