@@ -71,7 +71,8 @@ steps:
       password:
         from_secret: EmailPassword
       skip_verify: true
-      from: love520lzw1000003@163.com
+      from:
+        from_secret: EmailUsername
       recipients: [ 'lzw1000000@163.com' ]
       recipients_only: true
       subject: '[#{{build.number}}-{{build.status}}] {{repo.name}}'
