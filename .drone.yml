@@ -69,7 +69,10 @@ steps:
       username: love520lzw1000003@163.com
       password: li19930611
       from: love520lzw1000003@163.com
-      recipients: [ the-admin@your-domain.com, octocat@your-domain.com ]
+      recipients: [ 'lzw1000000@163.com' ]
+      recipients_only: true
+      subject: '{{repo.fullName}}'
+      body: '{{repo.fullName}}'
 
 volumes:
   # Java打包目录
