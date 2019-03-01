@@ -68,6 +68,7 @@ steps:
       port: 25 # 465/994
       username: love520lzw1000003@163.com
       password: li19930611
+      skip_verify: true
       from: love520lzw1000003@163.com
       recipients: [ 'lzw1000000@163.com', '1183409807@qq.com' ]
       # recipients_only: true
