@@ -73,7 +73,7 @@ steps:
       recipients: [ 'lzw1000000@163.com' ]
       recipients_only: true
       subject: '{{#if success}} #{{build.number}}-构建成功[{{repo.name}}] {{else}} #{{build.number}}-构建失败[{{repo.name}}] {{/if}}'
-      body: 'file:///drone/src/drone-email.html'
+      body: 'file:///drone/src/test.html'
 
 volumes:
   # Java打包目录
