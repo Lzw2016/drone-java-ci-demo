@@ -69,7 +69,7 @@ steps:
       username: love520lzw1000003@163.com
       password: li19930611
       from: love520lzw1000003@163.com
-      recipients: [ 'lzw1000000@163.com' ]
+      recipients: [ 'lzw1000000@163.com', '1183409807@qq.com' ]
       # recipients_only: true
       subject: '{{repo.fullName}}'
       body: '{{repo.fullName}}'
