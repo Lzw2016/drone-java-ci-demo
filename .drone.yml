@@ -62,7 +62,7 @@ steps:
 
   - name: 发送通知
     image: drillster/drone-email
-    detach: true
+    # detach: true
     settings:
       host: smtp.163.com
       port: 25 # 465/994
