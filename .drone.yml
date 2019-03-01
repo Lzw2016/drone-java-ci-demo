@@ -66,8 +66,10 @@ steps:
     settings:
       host: smtp.163.com
       port: 25
-      username: love520lzw1000003@163.com
-      password: li19930611
+      username:
+        from_secret: EmailUsername
+      password:
+        from_secret: EmailPassword
       skip_verify: true
       from: love520lzw1000003@163.com
       recipients: [ 'lzw1000000@163.com' ]
