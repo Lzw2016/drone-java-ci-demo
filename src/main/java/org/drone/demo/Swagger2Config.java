@@ -35,7 +35,7 @@ public class Swagger2Config {
                 .build();
         return new Docket(DocumentationType.SWAGGER_2)
                 .apiInfo(apiInfo)
-                .groupName("clever-quartz")
+                .groupName("drone-java-ci-demo")
                 .select()
                 .apis(RequestHandlerSelectors.basePackage("org.drone.demo.controller"))
                 .paths(PathSelectors.any())
