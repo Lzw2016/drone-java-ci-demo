@@ -42,7 +42,17 @@
 <div>tag = {{tag}}</div>
 <div>pullRequest = {{pullRequest}}</div>
 <div>deployTo = {{deployTo}}</div>
-<div>success = {{success}}</div>
-<div>failure = {{failure}}</div>
+
+{{#if success}}
+success
+{{else}}
+!success
+{{/if}}
+
+{{#if failure}}
+failure
+{{else}}
+!failure
+{{/if}}
 </body>
 </html>
