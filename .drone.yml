@@ -75,8 +75,10 @@ steps:
         from_secret: EmailUsername
       recipients: [ 'lzw1000000@163.com' ]
       recipients_only: true
-      subject: '[#{{build.number}}-{{build.status}}] {{repo.name}}'
-      body: 'file:///drone/src/drone-email.html'
+      # subject: '[#{{build.number}}-{{build.status}}] {{repo.name}}'
+      # body: 'file:///drone/src/drone-email.html'
+      subject: '测试邮件'
+      body: '别拦截 不是垃圾邮件!!!'
 
 volumes:
   # Java打包目录
